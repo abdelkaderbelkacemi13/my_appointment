@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-image: url("app/templates/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.project-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 16px;
+    color: black;
+}
+.buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+#appointment, #register, #login, #register-button,
+#patient-button, #doctor-button
+{
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+#register, #login, #register-button,
+#patient-button, #doctor-button{
+    background-color: #f95454;
+}
+#appointment {
+    background-color: #0d92f4;
+}
+
+.description, .login-box, .registration-form, .register-boxes {
+    background-color: #77cdff;
+    padding: 30px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15% 30% 30%;
+}
+@media (max-width: 500px) {
+    .login-box, .registration-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+}
+.login-box, .registration-form {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    flex-wrap: wrap;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="number"]
+{
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
